@@ -4,6 +4,9 @@
     {% include "model-header.html" %}
 </head>
 <body>
+    <div style="display: flex; align-items: center; justify-content: flex-end;">
+        <a href="/logout">logout</a>
+    </div>
     <h1>Agenda</h1>
     {% block content %} {% endblock %}
     {% include "model-footer.html" %}
