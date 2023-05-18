@@ -2,6 +2,7 @@
 
    {% block content %}    
     <h2>Agendamentos</h2>
+    <a href="evento/"><button type="button">Novo Evento</button></a>
     <ul style="font-size: 18px;">
     {% for e in evento %}
         <li><b>{{ e.titulo }} - {{e.get_data_evento}}</b></li>
