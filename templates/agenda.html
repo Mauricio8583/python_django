@@ -5,7 +5,7 @@
     <a href="evento/"><button type="button">Novo Evento</button></a>
     <ul style="font-size: 18px;">
     {% for e in evento %}
-        <li><b>{{ e.titulo }} - {{e.get_data_evento}}</b></li>
+        <li><b>{{ e.titulo }} - {{e.get_data_evento}} {<a href="evento/?id={{e.id}}">Editar</a> / <a href="evento/delete/{{ e.id }}">Excluir</a>}</b></li>
     {% endfor %}
     </ul>
     {% endblock %}
